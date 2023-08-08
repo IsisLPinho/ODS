@@ -1,0 +1,238 @@
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* instruções para a pagina */
+:root{
+    --prymary-color: #3b3b3b;;
+}
+
+html{
+    font: 400 62.5% 'Roboto', sans-serif;
+}
+
+p, a{
+    font-size: 1.8rem;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: 'Inter', sans-serif;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+/* coloca um padding para ajustar as divs */
+.principalConteiner{
+    padding: 1px;
+}
+/* mantem o topo fixo no scroll*/
+.wrapper-fixed{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/* coloca espaçamento entre as divs */
+.wrapper-padded{
+    padding-top: 12rem;
+}
+/* customiza as divs do topo e rodapé */
+.wrapper-tips{
+    background-color: #f6f3f3;
+    color: var(--prymary-color);
+}
+/* customiza o banner */
+.wrapper-hero{
+    background-color: #ffd6d6;
+}
+/* customiza as divs de cor cinza claro */
+.wrapper-general{
+    background-color: #eee9e9;
+    color: var(--prymary-color);
+}
+/* customiza as divs de cor avermelhada */
+.wrapper-general1{
+    background-color: #ffd6d6;
+    color: var(--prymary-color);
+}
+/* mantem o conteudo do site centralizado nos browswers */
+.conteiner{
+    max-width: 120rem; /*equivale a 1200px*/
+    margin: auto;
+}
+/* customiza os titulos, aplicado nos h2 */
+.section-title{
+    padding: 0 0 6rem;
+    text-align: center;
+    margin: 0;
+}
+/* customiza os conteudos do topo */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: center;
+}
+/* dimunui o tamanho da figura do topo */
+.header img{
+    width: 8rem;
+}
+/* customiza o menu */
+.header_nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    letter-spacing: .1rem;
+}
+
+.header_nav a{
+    text-decoration: none;
+    border: .1rem solid #ff5757;
+    padding: 1rem 1.2rem;
+    color: inherit;
+}
+
+.header_nav a:hover{
+    background-color: #ff5757;
+    color: white;
+}
+/* customiza o conteudo do banner */
+.hero-banner{
+    background-image: url(imagens/banner.jpg);
+    height: 50rem;
+    background-position: right center;
+    background-size: cover;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1{
+    text-transform: uppercase;
+    text-shadow: .3rem .3rem .3rem #333;
+    color: #f6f3f3;
+    margin-bottom: 7rem;
+}
+
+.hero-phrase{
+    background-color: rgba(0,0,0,.5);
+    font-size: 1.8rem;
+    color: #f6f3f3;
+    display: inline-block;
+    padding: 1.6rem;
+    border-bottom: .2rem solid;
+}
+/* customiza as partes com fundo cinza claro */
+.general{
+    text-align: center;
+    border: 1px solid #ff5757;
+    padding: 6rem;
+}
+/* customiza os conteudos da agenda*/
+.agenda-content{
+    text-align: left;
+    line-height: 2;
+    padding: 0 3rem 2rem 3rem;
+}
+
+.agenda-list{
+    list-style-position: inside;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 3rem;
+}
+
+.agenda-content a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+.agenda-content img{
+    float: left;
+}
+/* customiza os conteudos do ODS*/
+.ods{
+    text-align: center;
+    padding: 6rem;
+}
+
+.ods-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    line-height: 2;
+    padding: 0 3rem 2rem 3rem;
+    gap: 5rem;
+}
+
+.ods_div{
+    width:fit-content;
+}
+/* customiza os conteudos das metas*/
+.metas-list{
+    font-size: 1.8rem;
+    list-style-position: inside;
+    text-align: left;
+    line-height: 2;
+    padding: 0 3rem 2rem 3rem;
+}
+/* customiza os conteudos das notícias*/
+.noticias{
+    padding: 6rem;
+    font-size: 1.8rem;
+}
+
+.noticias-content{
+    display: flex;
+    justify-content: left;
+    padding: 1rem 3rem 2rem 3rem;
+    border-bottom: 1px solid;
+}
+
+.noticias-content img{
+    width: 5rem;
+}
+
+.noticias-content a{
+    text-decoration: none;
+    padding: 2rem 3rem;
+    color:crimson;
+}
+
+.noticias-content a:hover{
+    background-color: #eee9e9;
+}
+/* customiza os conteudos do rodapé*/
+.rodape{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.rodape h3{
+    padding-bottom: 1rem;
+}
+
+.rodape p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.rodape a{
+    font-size: 1.2rem;
+}
